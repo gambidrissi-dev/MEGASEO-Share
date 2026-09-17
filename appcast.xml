@@ -5,6 +5,22 @@
     <link>https://github.com/gambidrissi-dev/MEGASEO-Share</link>
     <description>Mises à jour de MegaSEO</description>
     <item>
+      <title>Version 3.0.1</title>
+      <description><![CDATA[
+<h3>Corrige le crash à l'installation d'une mise à jour Sparkle</h3>
+<p>applicationWillTerminate bloquait le thread principal (DispatchSemaphore.wait) en attendant l'arrêt async du serveur Vapor — s'il traînait, l'app ne quittait jamais au moment précis où Sparkle a besoin qu'elle quitte pour installer. Retiré : l'OS referme le port tout seul à la sortie du process. Testé : l'app quitte maintenant en 0s au lieu de rester accrochée.</p>
+<p>Durcit aussi deux try! au démarrage (AnalyticsStore, Application.make) pour qu'un store verrouillé/abîmé dégrade au lieu de crasher tout le lancement.</p>
+      ]]></description>
+      <pubDate>Thu, 17 Sep 2026 23:13:33 +0000</pubDate>
+      <sparkle:version>7</sparkle:version>
+      <sparkle:shortVersionString>3.0.1</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+      <enclosure url="https://github.com/gambidrissi-dev/MEGASEO-Share/releases/download/v3.0.1/MegaSEO-3.0.1.zip"
+                 sparkle:edSignature="KjKtXArPbS/ZYnkFsm4ov3iJDFgrL95QSHts9eAhJs6UiMwn5pvFhZuDYldFJNSiujQ21oLfBL9anCc6M8d0CQ=="
+                 length="12839812"
+                 type="application/octet-stream" />
+    </item>
+    <item>
       <title>Version 3.0.0</title>
       <description><![CDATA[
 <h3>Crawl au maximum : suivi des liens internes (même domaine, jusqu'à N pages), rendu JS optionnel via WKWebView pour les sites React/Vue, plus de données SEO par page (H1, canonique, indexabilité), bouton Arrêter, et un mode CLI --crawl pour diagnostiquer sans l'UI</h3>
