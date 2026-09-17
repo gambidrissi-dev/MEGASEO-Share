@@ -5,6 +5,20 @@
     <link>https://github.com/gambidrissi-dev/MEGASEO-Share</link>
     <description>Mises à jour de MegaSEO</description>
     <item>
+      <title>Version 2.0.0</title>
+      <description><![CDATA[
+<h3>Branche les 3 onglets sur de vraies vues : Crawl fonctionnel, Analytics enregistre/liste via SwiftData, SEO honnête sur son état stub</h3>
+      ]]></description>
+      <pubDate>Thu, 17 Sep 2026 22:23:41 +0000</pubDate>
+      <sparkle:version>3</sparkle:version>
+      <sparkle:shortVersionString>2.0.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+      <enclosure url="https://github.com/gambidrissi-dev/MEGASEO-Share/releases/download/v2.0.0/MegaSEO-2.0.0.zip"
+                 sparkle:edSignature="69y8pnRFhYmVxIQsdjHZboq+aXkBqvVwLLTXmKCEpBxIQhmbGxvf17oi2EzNc6PfGZkBZiqyKgX6CRpzgaoxDA=="
+                 length="1483104"
+                 type="application/octet-stream" />
+    </item>
+    <item>
       <title>Version 1.1.0</title>
       <description><![CDATA[
 <h3>Ajoute une vraie icône (loupe + barres montantes)</h3>
