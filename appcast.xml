@@ -5,6 +5,20 @@
     <link>https://github.com/gambidrissi-dev/MEGASEO-Share</link>
     <description>Mises à jour de MegaSEO</description>
     <item>
+      <title>Version 1.1.0</title>
+      <description><![CDATA[
+<h3>Ajoute une vraie icône (loupe + barres montantes)</h3>
+      ]]></description>
+      <pubDate>Thu, 17 Sep 2026 22:07:16 +0000</pubDate>
+      <sparkle:version>2</sparkle:version>
+      <sparkle:shortVersionString>1.1.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+      <enclosure url="https://github.com/gambidrissi-dev/MEGASEO-Share/releases/download/v1.1.0/MegaSEO-1.1.0.zip"
+                 sparkle:edSignature="yzE6PRH1lV6AurhUFzqj+JIE1U+7hkTPrIrjx/bc8tZypHhEKHskyH+Kxk8C7CBt36NzTixImHoAHH6cccpLCw=="
+                 length="1444280"
+                 type="application/octet-stream" />
+    </item>
+    <item>
       <title>Version 1.0.0</title>
       <description><![CDATA[
 <h3>Ajoute Package.resolved</h3>
