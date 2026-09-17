@@ -5,6 +5,20 @@
     <link>https://github.com/gambidrissi-dev/MEGASEO-Share</link>
     <description>Mises à jour de MegaSEO</description>
     <item>
+      <title>Version 2.1.0</title>
+      <description><![CDATA[
+<h3>Serveur d'ingestion Vapor embarqué dans l'app (port 8080, jeton optionnel) plutôt qu'un process séparé — même store SwiftData que l'onglet Analytics, testé en réel via curl</h3>
+      ]]></description>
+      <pubDate>Thu, 17 Sep 2026 22:41:20 +0000</pubDate>
+      <sparkle:version>4</sparkle:version>
+      <sparkle:shortVersionString>2.1.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+      <enclosure url="https://github.com/gambidrissi-dev/MEGASEO-Share/releases/download/v2.1.0/MegaSEO-2.1.0.zip"
+                 sparkle:edSignature="+pudTUNn5jcgE79MD+c0RpG+3sFr9e7Z1DneJz8Zk0efBRyyFK0aZMSB/pikuNilAg5D8uNfpzyFzBwBd9p6Cg=="
+                 length="12732279"
+                 type="application/octet-stream" />
+    </item>
+    <item>
       <title>Version 2.0.0</title>
       <description><![CDATA[
 <h3>Branche les 3 onglets sur de vraies vues : Crawl fonctionnel, Analytics enregistre/liste via SwiftData, SEO honnête sur son état stub</h3>
