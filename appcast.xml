@@ -5,6 +5,20 @@
     <link>https://github.com/gambidrissi-dev/MEGASEO-Share</link>
     <description>Mises à jour de MegaSEO</description>
     <item>
+      <title>Version 3.0.0</title>
+      <description><![CDATA[
+<h3>Crawl au maximum : suivi des liens internes (même domaine, jusqu'à N pages), rendu JS optionnel via WKWebView pour les sites React/Vue, plus de données SEO par page (H1, canonique, indexabilité), bouton Arrêter, et un mode CLI --crawl pour diagnostiquer sans l'UI</h3>
+      ]]></description>
+      <pubDate>Thu, 17 Sep 2026 23:04:18 +0000</pubDate>
+      <sparkle:version>6</sparkle:version>
+      <sparkle:shortVersionString>3.0.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+      <enclosure url="https://github.com/gambidrissi-dev/MEGASEO-Share/releases/download/v3.0.0/MegaSEO-3.0.0.zip"
+                 sparkle:edSignature="/eSzMz3Yya2RjYCYU6Zf3bThTcU04ccqdyWEvZ9zcq9KrHIXG351k9WkJeeGnkw1u9D7udW7OxiYnNMDZXxQCg=="
+                 length="12839927"
+                 type="application/octet-stream" />
+    </item>
+    <item>
       <title>Version 2.2.0</title>
       <description><![CDATA[
 <h3>Applique la direction visuelle habituelle (sidebar colorée, verre, pastilles, vocabulaire non technique — repris de Parure/Theme.swift) et enrichit Crawl : description, nombre de liens, durée, historique des pages analysées</h3>
