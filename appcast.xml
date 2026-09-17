@@ -5,6 +5,22 @@
     <link>https://github.com/gambidrissi-dev/MEGASEO-Share</link>
     <description>Mises à jour de MegaSEO</description>
     <item>
+      <title>Version 4.0.0</title>
+      <description><![CDATA[
+<h3>Crawl : version définitive avec audit SEO complet</h3>
+<p>- Liens externes vérifiés (HEAD puis GET si 405), liens cassés remontés avec leurs pages source - Détection automatique de problèmes par page : titre/description manquants ou hors normes, H1 manquant, images sans alt, non-indexable, redirection, doublons de titre/description entre pages du crawl - Respect optionnel de robots.txt (Disallow du bloc User-agent: *) - Sitemap.xml comme source additionnelle de pages (pages orphelines) - Crawl en parallèle (lots concurrents configurables) au lieu de séquentiel - Panneau de synthèse, filtre (tout/avec un souci/erreurs), recherche, export CSV</p>
+<p>Testé en réel sur swift.org : 10 pages, descriptions manquantes détectées, titre trop long détecté, 1 vrai lien externe cassé (bsky.app, 404) trouvé. Bug de déduplication après redirection trouvé et corrigé en testant (deux URLs différentes redirigeant vers la même page étaient comptées deux fois).</p>
+      ]]></description>
+      <pubDate>Thu, 17 Sep 2026 23:34:36 +0000</pubDate>
+      <sparkle:version>8</sparkle:version>
+      <sparkle:shortVersionString>4.0.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+      <enclosure url="https://github.com/gambidrissi-dev/MEGASEO-Share/releases/download/v4.0.0/MegaSEO-4.0.0.zip"
+                 sparkle:edSignature="OusxWvrQpny0W/AeKPWgWu8K8MK6ipC/OsHq15OHRnmOzjbHh7S4naogYbwnrexNNDeVz6wn9naPwxydYe6fCg=="
+                 length="12910669"
+                 type="application/octet-stream" />
+    </item>
+    <item>
       <title>Version 3.0.1</title>
       <description><![CDATA[
 <h3>Corrige le crash à l'installation d'une mise à jour Sparkle</h3>
