@@ -5,6 +5,22 @@
     <link>https://github.com/gambidrissi-dev/MEGASEO-Share</link>
     <description>Mises à jour de MegaSEO</description>
     <item>
+      <title>Version 6.0.0</title>
+      <description><![CDATA[
+<h3>SEOKit : pivote de DataForSEO (payant, jamais branché) vers Google Search Console (gratuit, données réelles sur tes propres sites)</h3>
+<p>Connexion OAuth via navigateur système + écouteur local éphémère (pattern loopback redirect RFC 8252, recommandé par Google pour les apps de bureau) — CapteurOAuth.swift. Le refresh token va dans le Trousseau (KeychainJeton.swift), jamais sur disque en clair ; client_id/client_secret restent dans le code, Google documente lui-même qu'une app de bureau ne peut pas les garder confidentiels. SearchConsoleClient expose sites() et requetes(pourSite:) — vraies requêtes, clics, impressions, CTR, position sur 28 jours.</p>
+<p>Un vrai bug trouvé et corrigé avant publication : le redirect_uri de l'échange du code doit être identique, port compris, à celui envoyé pour l'autorisation, sinon Google le refuse. Le mécanisme d'écoute locale (NWListener + parsing HTTP) testé isolément avec un vrai curl avant de le brancher au flux OAuth complet.</p>
+      ]]></description>
+      <pubDate>Fri, 18 Sep 2026 10:53:11 +0000</pubDate>
+      <sparkle:version>10</sparkle:version>
+      <sparkle:shortVersionString>6.0.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+      <enclosure url="https://github.com/gambidrissi-dev/MEGASEO-Share/releases/download/v6.0.0/MegaSEO-6.0.0.zip"
+                 sparkle:edSignature="hnk4+6ynbDnU8kvaODUwM6RYj+WMmQGH8Ih7S0QK74Swtl08XPapLF41wTKorF6cuAMFfXxHh00GyLsMiXP9BA=="
+                 length="1782260"
+                 type="application/octet-stream" />
+    </item>
+    <item>
       <title>Version 5.0.0</title>
       <description><![CDATA[
 <h3>Analytics : suivi de plusieurs sites externes (pull), retrait du serveur Vapor embarqué</h3>
