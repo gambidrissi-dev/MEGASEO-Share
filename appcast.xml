@@ -5,6 +5,22 @@
     <link>https://github.com/gambidrissi-dev/MEGASEO-Share</link>
     <description>Mises à jour de MegaSEO</description>
     <item>
+      <title>Version 6.0.1</title>
+      <description><![CDATA[
+<h3>Corrige deux bugs trouvés en testant en réel</h3>
+<p>SearchConsoleClient : .urlPathAllowed laisse / et : intacts (autorisés dans un chemin complet), donc le siteUrl embarqué dans l'URL de requête (https://www.collectifcobalt.eu/) produisait un chemin cassé — Google répondait une erreur JSON que le code essayait de décoder comme un succès, d'où "the data couldn't be read". Remplacé par un encodage n'autorisant que les caractères non réservés (RFC 3986), vérifié qu'il produit exactement le même résultat qu'encodeURIComponent. Ajoute aussi une vérification du statut HTTP partout : une erreur Google affiche maintenant son vrai message plutôt qu'une erreur de décodage générique.</p>
+<p>AnalyticsView : le formulaire d'ajout de site acceptait un domaine sans schéma ("collectifcobalt.eu" — valide pour URL(string:) mais sans host, donc inutilisable par URLSession) et échouait à la synchronisation avec "unsupported URL". Même correctif que CrawlView : https:// ajouté automatiquement, host requis avant d'activer le bouton Ajouter.</p>
+      ]]></description>
+      <pubDate>Fri, 18 Sep 2026 11:04:44 +0000</pubDate>
+      <sparkle:version>11</sparkle:version>
+      <sparkle:shortVersionString>6.0.1</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+      <enclosure url="https://github.com/gambidrissi-dev/MEGASEO-Share/releases/download/v6.0.1/MegaSEO-6.0.1.zip"
+                 sparkle:edSignature="jXCdsqfIqi4onLJNpIHsE7+74ZnI62RKaZkXM41HS/QQdWWWm7ZXOHa6eVu83WqLr5uFvvXe+M3z4ed4VzLgDg=="
+                 length="1788933"
+                 type="application/octet-stream" />
+    </item>
+    <item>
       <title>Version 6.0.0</title>
       <description><![CDATA[
 <h3>SEOKit : pivote de DataForSEO (payant, jamais branché) vers Google Search Console (gratuit, données réelles sur tes propres sites)</h3>
