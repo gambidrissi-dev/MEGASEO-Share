@@ -5,6 +5,22 @@
     <link>https://github.com/gambidrissi-dev/MEGASEO-Share</link>
     <description>Mises à jour de MegaSEO</description>
     <item>
+      <title>Version 5.0.0</title>
+      <description><![CDATA[
+<h3>Analytics : suivi de plusieurs sites externes (pull), retrait du serveur Vapor embarqué</h3>
+<p>Chaque site garde ses propres visites (ex. api/analytics.js + Vercel KV sur collectifcobalt.eu) ; l'app va les chercher à la demande via un jeton, plutôt que d'attendre qu'on vienne la joindre — jamais de port à ouvrir. SiteSuivi (nouveau modèle SwiftData) garde nom/URL/jeton/dernier import par site ; AnalyticsStore.synchroniser() ne réimporte que les events plus récents que le dernier import (lecture non destructive côté serveur).</p>
+<p>Le serveur Vapor embarqué (port 8080, jamais utilisable puisque le port reste fermé par choix) est retiré : ~11 Mo et toute la stack NIO en moins, plus le try! fragile qui allait avec.</p>
+      ]]></description>
+      <pubDate>Fri, 18 Sep 2026 10:36:05 +0000</pubDate>
+      <sparkle:version>9</sparkle:version>
+      <sparkle:shortVersionString>5.0.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+      <enclosure url="https://github.com/gambidrissi-dev/MEGASEO-Share/releases/download/v5.0.0/MegaSEO-5.0.0.zip"
+                 sparkle:edSignature="EUyzox+vBukrf6Zp5zUbyNvrml6sOM5fhuM28iUzgxpOD8FnGnRM10JKLitrXdz2zLNuK0GSMecK6UY2VyxaDA=="
+                 length="1720462"
+                 type="application/octet-stream" />
+    </item>
+    <item>
       <title>Version 4.0.0</title>
       <description><![CDATA[
 <h3>Crawl : version définitive avec audit SEO complet</h3>
